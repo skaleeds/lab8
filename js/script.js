@@ -1,15 +1,12 @@
 function init(){
   var button = document.getElementById('entrybutton');
   function textDisplay(){
-	  var textBox = document.getElementById('entryinput').value;
-	  document.getElementById('textoutput').innerHTML = textBox;
-	  var alertBox = 'Sulaiman Kaleel: ' + textIn;
-	  alert(alertBox);
+    var textbox = document.getElementById('entryinput');
+    document.getElementById('textoutput').innerHTML = textbox.value;
+    alert("Sulaiman Kaleel: " + textbox.value);
+	
   }
-	button.addEventListener('click', textDisplay);  
+  button.addEventListener('click', textDisplay);  
 
-}
-
- 
-
+  }
 window.addEventListener('load', init);
